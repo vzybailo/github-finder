@@ -1,0 +1,72 @@
+// обновленные стандартные стили
+
+// Заголовок
+@import "common/title";
+// Контролы
+@import "common/controls";
+// Линки
+@import "common/link";
+// Кнопки
+@import "common/buttons";
+// Меню
+@import "common/navbar";
+// Таблица
+@import "common/table";
+
+// FOR DEMO
+.demo {
+  margin: 0 auto;
+  padding-bottom: 0;
+  font-size: 1.2rem;
+  width: 100%;
+  .demo-content {
+    padding: 10px 0;
+    background-color: #fff;
+  }
+  h2 {
+    font-size: 1.6rem;
+    padding-bottom: .66rem;
+    text-align: center;
+  }
+  .link-demo {
+    margin: 10px auto;
+    text-align: center;
+  }
+  a {
+    color: #5c9ce6;
+    border-bottom: 1px solid #5c9ce6;
+    &:hover{
+      color: #2c7ad4;
+    }
+  }
+  img {
+    margin: 20px 0;
+  }
+  .ul-line li{
+    text-align: left;
+    position: relative;
+    list-style: none;
+    display: flex;
+    padding-left: .625rem;
+    // color: #657195;
+    &:before {
+      content: '\2013';
+      display: block;
+      margin-right: .625rem;
+    }
+  }
+}
+
+// Adaptive
+.link-demo a {
+  margin-right: 20px;
+}
+@media screen and (max-width: $tableWidth) {
+  .link-demo a {
+    margin-top: 10px;
+    margin-right: 0;
+  }
+  .user-name {
+    display: none;
+  }
+}
