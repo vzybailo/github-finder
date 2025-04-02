@@ -4,7 +4,8 @@
   line-height: 1;
   text-transform: uppercase;
   cursor: pointer;
-  border-radius: 30px;
+  border-radius: 10px;
+  font-size: 16px;
 
   // default btn
   &.btnDefaul {
@@ -16,8 +17,8 @@
   // primiry btn
   &.btnPrimary {
     color: #ffffff;
-    border: 1px solid #494ce8;
-    background-color: #494ce8;
+    border: 1px solid #f00;
+    background-color: #f00;
     &:hover {
       color: #ffffff;
     }

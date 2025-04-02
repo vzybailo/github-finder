@@ -70,7 +70,6 @@ export default {
             this.error = null
             this.repos = repos.data
             this.user = user.data
-            console.log(this.user, this.repos);
           })
               .catch(err => {
                 this.repos = null
@@ -93,8 +92,9 @@ export default {
         margin-top: 20px;
     }
     .repos__wrapper {
-        width: 600px;
-        margin: 0 auto;
+      max-width: 600px;
+      margin: 0 auto;
+      width: 100%;
     }
     .repo-info {
         display: flex;
